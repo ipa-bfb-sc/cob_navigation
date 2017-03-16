@@ -6,10 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /LaserScanFront1
-        - /LaserScanRear1
-        - /TF1
-        - /TF1/Frames1
+        - /Map1
       Splitter Ratio: 0.5
     Tree Height: 775
   - Class: rviz/Selection
@@ -357,7 +354,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/LaserScan
-      Color: 255; 0; 255
+      Color: 0; 255; 0
       Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
@@ -457,7 +454,7 @@ Visualization Manager:
       Marker Topic: /collision_velocity_filter/velocity_limited_marker
       Name: BaseCollisionMarker
       Namespaces:
-        {}
+        cob_velocity_limited_marker: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -548,214 +545,6 @@ Visualization Manager:
       Topic: /move_base/TrajectoryPlannerROS/global_plan
       Unreliable: false
       Value: true
-    - Class: rviz/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: false
-        arm_1_link:
-          Value: false
-        arm_2_link:
-          Value: false
-        arm_3_link:
-          Value: false
-        arm_4_link:
-          Value: false
-        arm_5_link:
-          Value: false
-        arm_6_link:
-          Value: false
-        arm_7_link:
-          Value: false
-        arm_base_link:
-          Value: false
-        base_footprint:
-          Value: true
-        base_laser_front_link:
-          Value: false
-        base_laser_rear_link:
-          Value: false
-        base_laser_top_link:
-          Value: false
-        base_link:
-          Value: false
-        bl_caster_r_wheel_link:
-          Value: false
-        bl_caster_rotation_link:
-          Value: false
-        br_caster_r_wheel_link:
-          Value: false
-        br_caster_rotation_link:
-          Value: false
-        cam3d_frame:
-          Value: false
-        cam3d_link:
-          Value: false
-        fl_caster_r_wheel_link:
-          Value: false
-        fl_caster_rotation_link:
-          Value: false
-        fr_caster_r_wheel_link:
-          Value: false
-        fr_caster_rotation_link:
-          Value: false
-        head_axis_link:
-          Value: false
-        head_base_link:
-          Value: false
-        head_cam_reference_link:
-          Value: false
-        head_color_camera_l_frame:
-          Value: false
-        head_color_camera_l_link:
-          Value: false
-        head_color_camera_r_frame:
-          Value: false
-        head_color_camera_r_link:
-          Value: false
-        head_cover_link:
-          Value: false
-        map:
-          Value: false
-        odom_combined:
-          Value: true
-        sdh_finger_11_link:
-          Value: false
-        sdh_finger_12_link:
-          Value: false
-        sdh_finger_13_link:
-          Value: false
-        sdh_finger_21_link:
-          Value: false
-        sdh_finger_22_link:
-          Value: false
-        sdh_finger_23_link:
-          Value: false
-        sdh_grasp_link:
-          Value: false
-        sdh_palm_link:
-          Value: false
-        sdh_thumb_1_link:
-          Value: false
-        sdh_thumb_2_link:
-          Value: false
-        sdh_thumb_3_link:
-          Value: false
-        sdh_tip_link:
-          Value: false
-        torso_base_link:
-          Value: false
-        torso_lower_neck_tilt_link:
-          Value: false
-        torso_pan_link:
-          Value: false
-        torso_upper_neck_tilt_link:
-          Value: false
-        tray_1_link:
-          Value: false
-        tray_2_link:
-          Value: false
-        tray_3_link:
-          Value: false
-        tray_left_link:
-          Value: false
-        tray_phidgets_1_link:
-          Value: false
-        tray_phidgets_2_link:
-          Value: false
-        tray_phidgets_3_link:
-          Value: false
-        tray_phidgets_4_link:
-          Value: false
-        tray_right_link:
-          Value: false
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        map:
-          odom_combined:
-            base_footprint:
-              base_link:
-                arm_base_link:
-                  arm_1_link:
-                    arm_2_link:
-                      arm_3_link:
-                        arm_4_link:
-                          arm_5_link:
-                            arm_6_link:
-                              arm_7_link:
-                                sdh_palm_link:
-                                  sdh_finger_11_link:
-                                    sdh_finger_12_link:
-                                      sdh_finger_13_link:
-                                        {}
-                                  sdh_finger_21_link:
-                                    sdh_finger_22_link:
-                                      sdh_finger_23_link:
-                                        {}
-                                  sdh_grasp_link:
-                                    {}
-                                  sdh_thumb_1_link:
-                                    sdh_thumb_2_link:
-                                      sdh_thumb_3_link:
-                                        {}
-                                  sdh_tip_link:
-                                    {}
-                base_laser_front_link:
-                  {}
-                base_laser_rear_link:
-                  {}
-                base_laser_top_link:
-                  {}
-                bl_caster_rotation_link:
-                  bl_caster_r_wheel_link:
-                    {}
-                br_caster_rotation_link:
-                  br_caster_r_wheel_link:
-                    {}
-                fl_caster_rotation_link:
-                  fl_caster_r_wheel_link:
-                    {}
-                fr_caster_rotation_link:
-                  fr_caster_r_wheel_link:
-                    {}
-                torso_base_link:
-                  torso_lower_neck_tilt_link:
-                    torso_pan_link:
-                      torso_upper_neck_tilt_link:
-                        head_base_link:
-                          head_axis_link:
-                            head_cam_reference_link:
-                              cam3d_link:
-                                cam3d_frame:
-                                  {}
-                              head_color_camera_l_link:
-                                head_color_camera_l_frame:
-                                  {}
-                              head_color_camera_r_link:
-                                head_color_camera_r_frame:
-                                  {}
-                        head_cover_link:
-                          {}
-                tray_1_link:
-                  tray_2_link:
-                    tray_3_link:
-                      tray_left_link:
-                        tray_phidgets_1_link:
-                          {}
-                        tray_phidgets_2_link:
-                          {}
-                        tray_phidgets_3_link:
-                          {}
-                        tray_phidgets_4_link:
-                          {}
-                      tray_right_link:
-                        {}
-      Update Interval: 0
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -780,22 +569,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.6607
+      Distance: 15.6926
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -1.65316
-        Y: -2.4718
-        Z: 0.00376511
+        X: 1.49843
+        Y: -1.30645
+        Z: 0.158377
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.5598
+      Pitch: 0.550397
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.73076
+      Yaw: 5.10858
     Saved: ~
 Window Geometry:
   Displays:
